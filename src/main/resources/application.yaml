@@ -16,3 +16,17 @@ spring:
       hibernate.jdbc.timezone: UTC
       hibernate.hibernate.format_sql: true
     show-sql: true
+
+  liquibase:
+    change-log: classpath:db.changelog/db.changelog-master.yaml
+
+
+
+
+app:
+  base-url: "https://hh.ru/search/vacancy?text="
+
+
+bot:
+  name: ${BOT_NAME}
+  token: ${BOT_TOKEN}
